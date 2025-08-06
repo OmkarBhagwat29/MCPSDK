@@ -1,0 +1,96 @@
+# =========================
+# Global .NET Ignore Rules
+# =========================
+## Build Results
+bin/
+obj/
+out/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## Rider and VS Code
+.idea/
+.vscode/
+
+## VS Code Extensions settings
+*.code-workspace
+
+## Dotnet environment
+*.dbmdl
+*.pdb
+*.mdb
+*.cache
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+/packages
+!map-ui/packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.TestResults/
+
+# Others
+*.vs/
+*.DS_Store
+Thumbs.db
+
+# Mac/Linux
+*.swp
+*~
+
+# Ignore local secrets or settings
+appsettings.Development.json
+secrets.json
+
+# Ignore compiled Rhino plugins
+*.rhp
+*.rhc
+
+# ================================
+# Node.js / Next.js / React Stuff
+# ================================
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.vitest/
+
+# Env files
+.env
+.env.*.local
+
+# Tailwind CSS generated files
+*.css.map
+
+# OS-specific
+.DS_Store
+Thumbs.db
