@@ -1,96 +1,98 @@
-# =========================
-# Global .NET Ignore Rules
-# =========================
-## Build Results
+# Build results
 bin/
 obj/
-out/
 [Bb]uild/
-[Bb]uild[Ll]og.*
-
-## User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-*.userprefs
-
-## Rider and VS Code
-.idea/
-.vscode/
-
-## VS Code Extensions settings
-*.code-workspace
-
-## Dotnet environment
-*.dbmdl
-*.pdb
-*.mdb
-*.cache
+[Ll]og/
 *.log
 
-# NuGet
-*.nupkg
-*.snupkg
-.nuget/
-/packages
-!map-ui/packages/
-project.lock.json
-project.fragment.lock.json
-artifacts/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.VC.db
+*.vscode/
 
-# Resharper
-_ReSharper*/
-*.DotSettings.user
+# Visual Studio
+.vs/
+.vscode/
 
-# Test results
-TestResults/
-*.TestResults/
-
-# Others
-*.vs/
-*.DS_Store
-Thumbs.db
-
-# Mac/Linux
-*.swp
-*~
-
-# Ignore local secrets or settings
-appsettings.Development.json
-secrets.json
-
-# Ignore compiled Rhino plugins
-*.rhp
-*.rhc
-
-# ================================
-# Node.js / Next.js / React Stuff
-# ================================
-# Dependencies
-node_modules/
-
-# Build output
-.next/
-out/
-dist/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Testing
-coverage/
-.vitest/
-
-# Env files
-.env
-.env.*.local
-
-# Tailwind CSS generated files
-*.css.map
+# JetBrains Rider
+.idea/
+*.sln.iml
 
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+*.psmdcp
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Backup & temp
+*.bak
+*.tmp
+*~ 
+
+# Auto-generated files
+Generated_Code/
+GeneratedFiles/
+
+# Test results
+TestResults/
+*.TestResults.xml
+*.trx
+*.coverage
+*.coveragexml
+
+# Rider settings
+.idea/
+*.DotSettings.user
+
+# ASP.NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+wwwroot/
+
+# Entity Framework
+*.db
+*.bak
+
+# Roslyn
+.vsconfig
+.vs/
+.Analyzers/
+
+# Others
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings
+*.orig
+*.sdf
+*.cache
+*.pidb
+*.pdb
+
+# Nuke Build (if using NUKE)
+.temp/
+output/
+build/_temp/
+
+# GitHub Copilot / VS extensions
+*.code-workspace
+
+# Optional: Windows crash dump files
+*.dmp
+
+# Local secrets or dev settings (customize as needed)
+secrets.json
+appsettings.Local.json
+appsettings.Development.json
